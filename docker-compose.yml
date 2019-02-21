@@ -1,0 +1,22 @@
+version: '3'
+services:
+  frontend:
+    build: frontend/.
+    image: 'iac/docker-workshop-frontend'
+    ports:
+      - 8084:80
+  backend: 
+    build: backend/.
+    image: 'iac/docker-workshop-backend'
+    ports: 
+      - 8085:8085
+    environment:
+      SPRING_DATASOURCE_URL: 'jdbc:postgresql://db:5432/postgres'
+      SPRING_DATASOURCE_USERNAME: 'postgres'
+      SPRING_DATASOURCE_PASSWORD: 'Geheim123!'
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 'Geheim123!'
+networks:
+  db:
