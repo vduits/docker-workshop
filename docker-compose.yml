@@ -1,10 +1,5 @@
 version: '3'
 services:
-  frontend:
-    build: frontend/.
-    image: 'iac/docker-workshop-frontend'
-    ports:
-      - 8084:80
   backend: 
     build: backend/.
     image: 'iac/docker-workshop-backend'
@@ -18,5 +13,3 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: 'Geheim123!'
-networks:
-  db:
