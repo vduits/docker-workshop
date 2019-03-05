@@ -1,6 +1,8 @@
 package nl.hu.iac.dockerworkshopbackend.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +12,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Klant {
+  @Id
+  @GeneratedValue
   private int klantId;
   private String voornaam;
   private String tussenvoegsel;
