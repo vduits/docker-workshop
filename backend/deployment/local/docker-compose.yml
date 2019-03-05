@@ -5,4 +5,4 @@ services:
     environment:
       POSTGRES_PASSWORD: 'Geheim123!'
     ports: 
-      - 5432:5432
+      - 5430:5432
