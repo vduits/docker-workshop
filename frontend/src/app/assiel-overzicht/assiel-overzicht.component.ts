@@ -10,27 +10,33 @@ export class AssielOverzichtComponent implements OnInit {
   pets = [
     {
       name: "ruby",
-      description: "A good boy"
+      description: "A good boy",
+      image: "https://i.imgur.com/m26AVZW.jpg"
     },
     {
       name: "pookie",
-      description: "A housecat with social issues"
+      description: "A housecat with social issues",
+      image: "https://i.redd.it/rwe3mpuioqj21.jpg"
     },
     {
       name: "catdog",
-      description: "It's a catdog! really!"
+      description: "It's a catdog! really!",
+      image: "https://images-na.ssl-images-amazon.com/images/I/41kGLopxorL._SX355_.jpg"
     },
     {
       name: "timmie",
-      description: "Likes to put his teeth everywhere, but otherwise a very nice rabbit"
+      description: "Likes to put his teeth everywhere, but otherwise a very nice rabbit",
+      image: "https://i.ytimg.com/vi/8BYa0U1h5Fs/hqdefault.jpg"
     },
     {
       name: "rubyII",
-      description: "The better twin"
+      description: "The better twin",
+      image: "https://i.imgur.com/d2mt4M6.jpg"
     },
     {
-      name: "rubyIII",
-      description: "Why did we do this again?"
+      name: "rubyV",
+      description: "Why did we do this again?",
+      image: "http://i.huffpost.com/gen/808414/images/o-NIC-CAGE-PLANE-PHOTO-facebook.jpg"
     },
 
   ]
